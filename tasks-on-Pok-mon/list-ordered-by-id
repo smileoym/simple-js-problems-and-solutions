@@ -18,3 +18,12 @@ $.get( "http://pokeapi.co/api/v2/pokemon/", function( data ) {
 <div></div>
 </body>
 </html>
+<!-- The forEach() method calls a provided function once for each element in an array, in order.
+Note: forEach() does not execute the function for array elements without values.
+
+The split() method is used to split a string into an array of substrings, and returns the new array.
+Tip: If an empty string ("") is used as the separator, the string is split between each character.
+Note: The split() method does not change the original string.
+
+The append() method inserts specified content at the end of the selected elements.
+Tip: To insert content at the beginning of the selected elements, use the prepend() method. -->
