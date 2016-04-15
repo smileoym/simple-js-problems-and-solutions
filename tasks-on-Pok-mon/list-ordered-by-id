@@ -10,7 +10,7 @@ $.get( "http://pokeapi.co/api/v2/pokemon/", function( data ) {
     $( "div" ).append( id + ". " + el.name );
     $( "div" ).append( '<br>' );
   });
- 
+}); 
 </script>
 
 </head>
