@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<title></title>
+
+<script type="text/javascript">
+$.get( "http://pokeapi.co/api/v2/pokemon/", function( data ) {
+    data.results.forEach(function(el){
+    var id = el.url.split('/')[6];
+    
+   var we = $.get(el.url, function(data) {
+    	var weight = data.weight;
+    	$('span').append('-' + weight);
+    	$('span').append('<br>');
+    	return weight;
+    	// console.log(weight);
+    });
+    console.log(we);
+    $( "div" ).append( id + ". " + el.name  );
+    $( "div" ).append( '<br>' );
+
+
+  });
+ });
+
+</script>
+
+
+</head>
+<body>
+<div>  </div><span></span>
+</body>
+</html>
